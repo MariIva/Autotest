@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite_Test" duration-ms="210" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+    <groups>
+    </groups>
+    <test name="FtpClientTest" duration-ms="200" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+      <class name="FtpClientTest">
+        <test-method status="FAIL" signature="getData_failConnect()[pri:0, instance:FtpClientTest@77b52d12]" name="getData_failConnect" duration-ms="60" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <exception class="org.testng.TestException">
+            <message>
+              <![CDATA[
+Method FtpClientTest.getData_failConnect()[pri:0, instance:FtpClientTest@77b52d12] should have thrown an exception of type class java.net.ConnectException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestException: 
+Method FtpClientTest.getData_failConnect()[pri:0, instance:FtpClientTest@77b52d12] should have thrown an exception of type class java.net.ConnectException
+at org.testng.internal.invokers.ExpectedExceptionsHolder.noException(ExpectedExceptionsHolder.java:81)
+at org.testng.internal.invokers.TestInvoker.considerExceptions(TestInvoker.java:831)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:698)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at RunTest.main(RunTest.java:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData_failConnect -->
+        <test-method status="PASS" signature="getData_failIP()[pri:0, instance:FtpClientTest@77b52d12]" name="getData_failIP" duration-ms="40" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[students.jso]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: students.jso
+at sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:485)
+at main.java.FtpClient.getData(FtpClient.java:23)
+at FtpClientTest.getData_failIP(FtpClientTest.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at RunTest.main(RunTest.java:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData_failIP -->
+        <test-method status="PASS" signature="getData_failPass()[pri:0, instance:FtpClientTest@77b52d12]" name="getData_failPass" duration-ms="40" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <exception class="sun.net.ftp.FtpLoginException">
+            <message>
+              <![CDATA[Invalid username/password]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[sun.net.ftp.FtpLoginException: Invalid username/password
+at sun.net.www.protocol.ftp.FtpURLConnection.connect(FtpURLConnection.java:308)
+at sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:393)
+at main.java.FtpClient.getData(FtpClient.java:23)
+at FtpClientTest.getData_failPass(FtpClientTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at RunTest.main(RunTest.java:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- sun.net.ftp.FtpLoginException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData_failPass -->
+        <test-method status="PASS" signature="getData_failLogin()[pri:0, instance:FtpClientTest@77b52d12]" name="getData_failLogin" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <exception class="sun.net.ftp.FtpLoginException">
+            <message>
+              <![CDATA[Invalid username/password]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[sun.net.ftp.FtpLoginException: Invalid username/password
+at sun.net.www.protocol.ftp.FtpURLConnection.connect(FtpURLConnection.java:308)
+at sun.net.www.protocol.ftp.FtpURLConnection.getInputStream(FtpURLConnection.java:393)
+at main.java.FtpClient.getData(FtpClient.java:23)
+at FtpClientTest.getData_failLogin(FtpClientTest.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1249)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at RunTest.main(RunTest.java:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- sun.net.ftp.FtpLoginException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData_failLogin -->
+        <test-method status="PASS" signature="getData_success()[pri:0, instance:FtpClientTest@77b52d12]" name="getData_success" duration-ms="50" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getData_success -->
+      </class> <!-- FtpClientTest -->
+    </test> <!-- FtpClientTest -->
+    <test name="StudentListTest" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+      <class name="StudentListTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:StudentListTest@2ef5e5e3]" name="setUp" is-config="true" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:StudentListTest@2ef5e5e3]" name="beforeClass" is-config="true" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:StudentListTest@2ef5e5e3]" name="setUp" is-config="true" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getStudent_fail()[pri:0, instance:StudentListTest@2ef5e5e3]" name="getStudent_fail" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStudent_fail -->
+        <test-method status="PASS" signature="addStudent_uniqueID()[pri:0, instance:StudentListTest@2ef5e5e3]" name="addStudent_uniqueID" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStudent_uniqueID -->
+        <test-method status="PASS" signature="getStudent_success()[pri:0, instance:StudentListTest@2ef5e5e3]" name="getStudent_success" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStudent_success -->
+        <test-method status="PASS" signature="findStudent_success()[pri:0, instance:StudentListTest@2ef5e5e3]" name="findStudent_success" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findStudent_success -->
+        <test-method status="PASS" signature="findStudent_fail()[pri:0, instance:StudentListTest@2ef5e5e3]" name="findStudent_fail" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- findStudent_fail -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:StudentListTest@2ef5e5e3]" name="setUp" is-config="true" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:StudentListTest@2ef5e5e3]" name="setUp" is-config="true" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:StudentListTest@2ef5e5e3]" name="setUp" is-config="true" duration-ms="0" started-at="2024-01-30T13:30:56 MSK" finished-at="2024-01-30T13:30:56 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- StudentListTest -->
+    </test> <!-- StudentListTest -->
+  </suite> <!-- Suite_Test -->
+</testng-results>

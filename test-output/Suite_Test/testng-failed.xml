@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_Test]">
+  <test thread-count="5" name="FtpClientTest(failed)">
+    <classes>
+      <class name="FtpClientTest">
+        <methods>
+          <include name="getData_failConnect"/>
+        </methods>
+      </class> <!-- FtpClientTest -->
+    </classes>
+  </test> <!-- FtpClientTest(failed) -->
+</suite> <!-- Failed suite [Suite_Test] -->
